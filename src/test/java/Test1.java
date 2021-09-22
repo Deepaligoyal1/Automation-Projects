@@ -1,5 +1,6 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Test1 {
@@ -9,9 +10,9 @@ public class Test1 {
         WebDriver chromeDriver= new ChromeDriver();
 
     }
-
+    @Parameters("browser")
     @Test
-    void testSetup(){
-        System.out.println("testing setup");
+    void testSetup(String browser){
+        System.out.println("testing setup for " + browser);
     }
 }
