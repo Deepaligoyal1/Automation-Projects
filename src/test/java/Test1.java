@@ -14,5 +14,6 @@ public class Test1 {
     @Test
     void testSetup(String browser){
         System.out.println("testing setup for " + browser);
+        System.out.println("adding to test jenkin schedule");
     }
 }
